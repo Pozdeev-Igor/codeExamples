@@ -29,10 +29,12 @@ public class MiniMusicPlayer3 {
 
         try {
             Sequencer sequencer = MidiSystem.getSequencer();
-            sequencer.open();
-            sequencer.addControllerEventListener(m1, new int[] {127});
-            Sequence seq = new Sequence(Sequence.PPQ, 4);
-            Track track = seq.createTrack();
+            
+                sequencer.open();
+                sequencer.addControllerEventListener(m1, new int[] {127});
+            
+                    Sequence seq    = new Sequence(Sequence.PPQ, 4);
+                    Track track     = seq.createTrack();
 
             int r = 0;
             for (int i = 0; i < 60; i += 4) {
@@ -82,9 +84,8 @@ public class MiniMusicPlayer3 {
 
                 int ht      = (int) ((Math.random() * 120) + 10);
                 int width   = (int) ((Math.random() * 120) + 10);
-
-                int x = (int) ((Math.random() * 40) + 10);
-                int y = (int) ((Math.random() * 40) + 10);
+                int x       = (int) ((Math.random() * 40) + 10);
+                int y       = (int) ((Math.random() * 40) + 10);
 
                 g.fillRect(x, y, ht, width);
                 msg = false;
