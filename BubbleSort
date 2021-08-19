@@ -1,3 +1,9 @@
+//пример сортировки пузырьком
+
+
+
+
+
 public class BubbleSort {
 
     public static int solution (int x) {
