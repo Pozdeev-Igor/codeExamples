@@ -1,3 +1,7 @@
+//Animation example
+
+
+
 package GUI.Animation;
 
 import GUI.MyDrawPanel;
@@ -6,7 +10,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class SimpleAnimation {
-    int x = 70; //создаем два полня в главном классе GUI
+    int x = 70; //создаем два поля в главном классе GUI
     int y = 70; //для координат х и у круга
 
     public static void main(String[] args) {
